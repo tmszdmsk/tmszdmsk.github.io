@@ -25,15 +25,16 @@
                 margin-bottom: -100px;
             }
             #card{
-                background-image: url('./paper.png');
+                background-image: url('./paper_2.png');
                 width: 320px;
                 height:180px;
                 margin-left:auto;
                 margin-right: auto;
                 clear:both;
                 -webkit-box-shadow:  5px 5px 5px 10px #222;
-                box-shadow:  0px 0px 35px 5px #000;
+                box-shadow:  0px 0px 25px 0px #000;;
                 padding: 10px;
+				position:relative;
             }
             h1 {
                 font-size: 32px;
@@ -48,23 +49,48 @@
                 font-weight: 300;
                 margin: 0px;
                 line-height: 14px;opacity: 0.8;
+				text-align:right;
             }
             div.info-line {
                 font-size: 16px;
                 font-weight: 200px;
                 line-height: 16px;opacity: 0.8;
+				text-align: right;
             }
+			a{
+				color: #000;
+				text-decoration: none;
+			}
+			a:hover{
+				text-decoration: underline;
+			}
+			#header{
+				position:absolute;
+				top:0;left:0;
+				padding: 15px 0 0 15px;
+			}
+			#text{
+				position: absolute;
+				bottom:0;
+				right:0;
+				padding:0 15px 15px 0;
+			}
+			
         </style>
     </head>
     <body>
         <div id="content">
             <div id="floater"></div>
             <div id="card">
-                <h1>Tomasz Adamski</h1>
-                <h2>Software Developer</h2>
-                <div class="info-line">+48 662 03 03 09</div>
-                <div class="info-line">tomasz.adamski@gmail.com</div>
-                <div class="info-line">tadamski.com</div>
+				<div id="header">
+					<h1>Tomasz Adamski</h1>
+					<h2>Software Developer</h2>
+				</div>
+				<div id="text">
+					<div class="info-line">+48 662 03 03 09</div>
+					<div class="info-line"><a href="mailto:tomasz.adamski@gmail.com">tomasz.adamski@gmail.com</a></div>
+					<div class="info-line">tadamski.com</div>
+				</div>
             </div>
         </div>
     </body>
